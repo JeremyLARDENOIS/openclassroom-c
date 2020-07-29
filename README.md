@@ -113,3 +113,58 @@ Attention, pour le type double, il faut utiliser `%lf`. Le & est très important
 |Multiplication|*  |
 |Division|/|
 |Modulo|%|
+
+#### Les raccourcis
+
+```c
+nombre++; //nombre += 1
+nombre--; //nombre -= 1
+nombre += 4; //nombre = nombre + 4
+nombre -= 3; //nombre = nombre - 3
+nombre *= 5; //nombre = nombre * 5
+nombre /= 3; //nombre = nombre / 3
+nombre %= 3; //nombre = nombre % 3
+```
+
+#### La bibliotèque mathématique
+
+Pour inclure la bibliotèque mathématique, il faut rajouter la ligne de code suivante en haut du fichier.
+
+```c
+#include <math.h>
+```
+
+Voici quelques fonctions utilisables :
+
+- fabs
+
+> Cette fonction retourne la valeur absolue d'un nombre, c'est-à-dire |x| (c'est la notation mathématique).
+La valeur absolue d'un nombre est sa valeur positive.
+
+- ceil
+
+> Cette fonction renvoie le premier nombre entier après le nombre décimal qu'on lui donne.
+
+- floor
+
+> C'est l'inverse de la fonction précédente : cette fois, elle renvoie l'entier directement en dessous.
+
+- pow
+
+> Cette fonction permet de calculer la puissance d'un nombre.
+
+```c
+pow(nombre, puissance);
+```
+
+- sqrt
+
+> Cette fonction calcule la racine carrée d'un nombre. Elle renvoie un double
+
+- sin, cos, tan
+
+> Ce sont les trois fameuses fonctions utilisées en trigonométrie.
+Le fonctionnement est le même, ces fonctions renvoient un double.
+
+> Ces fonctions attendent une valeur en radians.
+
