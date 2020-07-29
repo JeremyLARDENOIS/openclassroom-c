@@ -94,3 +94,21 @@ Vous pouvez ainsi récupérer le contenu de plusieurs variables.
 ```c
 printf("Vous avez %d vies et vous etes au niveau n° %d", nombreDeVies, niveau);
 ```
+
+### Récupérer une saisie
+
+```c
+int age = 0;
+scanf("%d", &age);
+```
+
+Attention, pour le type double, il faut utiliser `%lf`. Le & est très important.
+
+### Les opérations de calcul
+
+|Opération|Signe|
+|Addition|+|
+|Soustraction|-|
+|Multiplication|*  |
+|Division|/|
+|Modulo|%|
