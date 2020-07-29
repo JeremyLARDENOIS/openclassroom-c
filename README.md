@@ -107,6 +107,7 @@ Attention, pour le type double, il faut utiliser `%lf`. Le & est très important
 ### Les opérations de calcul
 
 |Opération|Signe|
+|-|-|
 |Addition|+|
 |Soustraction|-|
 |Multiplication|*  |
