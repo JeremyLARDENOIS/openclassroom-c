@@ -168,3 +168,19 @@ Le fonctionnement est le même, ces fonctions renvoient un double.
 
 > Ces fonctions attendent une valeur en radians.
 
+- asin, acos, atan
+
+Ce sont les fonctions arc sinus, arc cosinus et arc tangente, d'autres fonctions de trigonométrie.
+Elles s'utilisent de la même manière et renvoient un double.
+
+- exp
+
+> Cette fonction calcule l'exponentielle d'un nombre. Elle renvoie un double
+
+- log
+
+> Cette fonction calcule le logarithme népérien d'un nombre (que l'on note aussi « ln »).
+
+- log10
+
+> Cette fonction calcule le logarithme base 10 d'un nombre.
