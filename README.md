@@ -336,3 +336,85 @@ default:
 }
 ```
 
+### Les conditions ternaires
+
+On peut remplacer ceci :
+
+```c
+if (majeur)
+
+  age = 18;
+
+else
+
+  age = 17;
+```
+
+par : 
+
+```c
+age = (majeur) ? 18 : 17;
+```
+
+`age` vaudra 18 si `majeur` est vrai (égal à 1 ou autre) et 17 si `majeur` est faux (égal à 0)
+
+## Les boucles
+
+Une boucle est une structure qui permet de répéter les mêmes instructions plusieurs fois.
+
+Il existe 3 types de boucles courantes en C :
+- while
+- do… while
+- for
+
+### La boucle while
+
+`while` signifie « Tant que ». On dit donc à l'ordinateur « Tant que la condition est vraie, répète les instructions entre accolades 
+
+```c
+while (/* Condition */)
+{
+    // Instructions à répéter
+}
+```
+
+### La boucle do...while
+
+Ce type de boucle est très similaire à `while`, bien qu'un peu moins utilisé en général.
+
+La seule chose qui change en fait par rapport à `while`, c'est la position de la condition. Au lieu d'être au début de la boucle, la condition est à la fin :
+
+```c
+int compteur = 0;
+
+do
+{
+    printf("Salut les Zeros !\n");
+    compteur++;
+} while (compteur < 10);
+```
+
+**NE PAS OUBLIER LE `;` DE FIN !**
+
+### La boucle for
+
+La boucle for est aussi très utlisé. Dans les parenthèses, on a :
+   
+- La première est l'initialisation : cette première instruction est utilisée pour préparer notre variablecompteur. Dans notre cas, on initialise la variable à 0.
+
+- La seconde est la condition : comme pour la bouclewhile, c'est la condition qui dit si la boucle doit être répétée ou non. Tant que la condition est vraie, la boucleforcontinue.
+
+- Enfin, il y a l'incrémentation : cette dernière instruction est exécutée à la fin de chaque tour de boucle pour mettre à jour la variablecompteur. La quasi-totalité du temps on fera une incrémentation, mais on peut aussi faire une décrémentation (variable--) ou encore n'importe quelle autre opération (variable += 2;pour avancer de 2 en 2 par exemple).
+
+```c
+int compteur;
+
+
+for (compteur = 0 ; compteur < 10 ; compteur++)
+
+{
+
+    printf("Hello world !\n");
+
+}
+```
