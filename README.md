@@ -184,3 +184,52 @@ Elles s'utilisent de la même manière et renvoient un double.
 - log10
 
 > Cette fonction calcule le logarithme base 10 d'un nombre.
+
+## Les conditions
+
+> SI la variable vaut ça,
+ALORS fais ceci.
+
+```c
+if (/* Votre condition */)
+{
+  // Instructions à exécuter si la condition est vraie
+}
+```
+
+> SI la variable vaut ça,
+ALORS fais ceci,
+SINON fais cela.
+
+
+```c
+if (age >= 18) // Si l'âge est supérieur ou égal à 18
+{
+  printf ("Vous etes majeur !");
+}
+else // Sinon...
+{
+  printf ("Ah c'est bete, vous etes mineur !");
+}
+```
+
+> SI la variable vaut ça ALORS fais ceci,
+SINON SI la variable vaut ça ALORS fais ça,
+SINON fais cela.
+
+```c
+if (age >= 18) // Si l'âge est supérieur ou égal à 18
+{
+  printf ("Vous etes majeur !");
+}
+else if ( age > 4 ) // Sinon, si l'âge est au moins supérieur à 4 
+{
+  printf ("Bon t'es pas trop jeune quand meme...");
+}
+else // Sinon...
+{
+  printf ("Aga gaa aga gaaa"); // Langage bébé, vous pouvez pas comprendre
+}
+```
+
+
