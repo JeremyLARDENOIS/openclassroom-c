@@ -233,8 +233,106 @@ else // Sinon...
 ```
 
 ### Plusieurs conditions à la fois
+
 |Symbole|Signification|
 |-|-|
 |&&|ET|
 |\|\||OU|
 |!|NON|
+
+### Les booléens
+
+Les conditions peuvent etre remplacées par des nombres. En c, ce sont des entiers. 0 pour faux et le reste pour vrai (généralement 1). 
+
+```c
+if (1)
+{
+    printf("C'est vrai");
+}
+else
+{
+    printf("C'est faux");
+}
+```
+
+> C'est vrai
+
+```c
+if (0)
+{
+    printf("C'est vrai");
+}
+else
+{
+    printf("C'est faux");
+}
+```
+
+> C'est faux
+
+En faites les tests que vous faites renvoient une valeur, soit 0 soit 1. On appelle ce type de variable un booléen. La valeur d'un booléen peut etre stockée dans une variable.
+
+## Switch/case
+
+On peut remplacer :
+
+```c
+if (age == 2)
+{
+    printf("Salut bebe !");
+}
+else if (age == 6)
+{
+    printf("Salut gamin !");
+}
+else if (age == 12)
+{
+    printf("Salut jeune !");
+}
+else if (age == 16)
+{
+    printf("Salut ado !");
+}
+else if (age == 18)
+{
+    printf("Salut adulte !");
+}
+else if (age == 68)
+{
+    printf("Salut papy !");
+}
+else
+{
+    printf("Je n'ai aucune phrase de prete pour ton age");
+}
+```
+
+par :
+
+```c
+switch (age)
+{
+case 2:
+  printf("Salut bebe !");
+  break;
+case 6:
+  printf("Salut gamin !");
+  break;
+case 12:
+  printf("Salut jeune !");
+  break;
+case 16:
+  printf("Salut ado !");
+  break;
+case 18:
+  printf("Salut adulte !");
+  break;
+case 68:
+  printf("Salut papy !");
+  break;
+default:
+  printf("Je n'ai aucune phrase de prete pour ton age  ");
+  break;
+}
+```
+
