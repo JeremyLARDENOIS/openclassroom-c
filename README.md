@@ -232,4 +232,9 @@ else // Sinon...
 }
 ```
 
-
+### Plusieurs conditions à la fois
+|Symbole|Signification|
+|-|-|
+|&&|ET|
+|\|\||OU|
+|!|NON|
